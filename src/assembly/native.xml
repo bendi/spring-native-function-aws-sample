@@ -22,7 +22,7 @@
 			<useDefaultExcludes>true</useDefaultExcludes>
 			<fileMode>0775</fileMode>
 			<includes>
-				<include>spring-lambda</include>
+				<include>${native.image-name}</include>
 			</includes>
 		</fileSet>
 	</fileSets>

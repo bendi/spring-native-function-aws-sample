@@ -18,7 +18,8 @@ services:
     links:
       - native-builder
     build:
-      context: docker/native
+      context: .
+      dockerfile: docker/native/Dockerfile
     ports:
      - "9000:8080"
     profiles:
@@ -26,7 +27,8 @@ services:
   java-runner:
     container_name: function-sample-aws
     build:
-      context: docker/java
+      context: .
+      dockerfile: docker/java/Dockerfile
     ports:
       - "9000:8080"
 
